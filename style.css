@@ -4,7 +4,7 @@
     100% {opacity: 0.2;}
 }
 body{
-    margin: 0;
+    margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -13,13 +13,20 @@ body{
 
 .urna{
     background-color: #dbd5c9;
-    padding: 30px;
+    padding: 1.5rem;
+    max-width: 45rem;
+    height: auto;
+    width: 40rem;
+    margin-top: 12rem;
+    border-radius: 4px;
     display: flex;
+    box-shadow: 8px 4px 0px #555;
 }
 
 .tela{
-    width: 500px;
-    height: 320px;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
     border: 2px solid #555;
     background: linear-gradient(to right,  #e8e8e8, #c1c1c1);
     display: flex;
@@ -27,7 +34,7 @@ body{
 }
 
 .telado{
-    margin-left: 30px;
+    margin-left: 1.2rem;
     background-color:gray;
 }
 
@@ -38,35 +45,38 @@ body{
 }
 
 .teclado--botao{
-    width: 70px;
-    height: 40px;
+    width: 4rem;
+    height: 2.2rem;
     background-color: #000;
     color: #fff;
-    font-size: 25px;
+    font-size: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 10px;
     cursor: pointer;
+    border-radius: 4px;
     box-shadow: 3px 3px 0px #555;
 }
 
 .botao--branco{
+    margin-left: 15px;
     background-color: #fff;
     color: #000;
-    font-size: 15px;
+    padding: 0.5rem;
+    font-size: 0.8em;
 }
 .botao--corrige{
     background-color: #f09046;
     color: #000;
-    font-size: 15px;
+    padding: 0.5rem;
+    font-size: 0.8em;
 }
 .botao--confirma{
     background-color: #48c079;
     color: #000;
-    font-size: 14px;
-    width: 90px;
-    height: 50px;
+    padding: 0.5rem;
+    font-size: 0.8em;
 }
 
 
@@ -155,4 +165,49 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+/* Adicionando responsividade */
+
+@media (max-width: 48em){
+    .urna{
+        height: 19srem;
+        width: 35rem;
+    }
+    .tela{
+        width: 25rem;
+    }
+    .numero{
+        width: 1.5rem;
+        margin-top: -15px;
+    }
+    .aviso--grande{
+        margin-top: 13px;
+        margin-right: 4rem;
+        font-size: 12px;
+    }
+    .d-2{
+        margin-top: 5px;
+        font-size: 12px;
+    }
+    .d-1-2 > span{
+        font-size: 12px;
+        margin-right: 75px;
+        margin-top: -50px;
+        font-weight: 800; 
+    }
+    .d-1-image {
+        height: 7rem;
+        font-size: 11px;
+        font-weight: 700;
+        margin-right: 3px;
+        margin-top: 4px;
+    }
+    .d-1-image img{
+        width: 5rem;
+    }
+    .d-1-4{
+        font-size: 12px;
+        font-weight: 600;
+    }
 }
